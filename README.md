@@ -28,67 +28,27 @@
 идентификатор, первичный ключ, serial,
 фамилия varchar(50),
 ...
-идентификатор структурного подразделения, внешний ключ, integer).
+Оклад (
+идентификатор, первичный ключ, money (50),
 
-staff (
-staff_id primary_key,
-FName VARCHAR(50) ,
-LName VARCHAR(50) ,
-Patronymic varchar(50),
-divisions_id varchar(50),
-Structura_id varchar(50),
-date_off_id datetime,
-position_id varchar(50),
-salary_id numeric,
-address_id VARCHAR(50),
-project_id VARCHAR(50),
-)
+Должность (
+идентификатор, первичный ключ, varchar/text (50),
 
-salary (
-salary_id primary_key
-pay numeric
-)
+Тип подразделения (
+символьный тип varchar/text (50),
 
-position (
-position_id primary_key
-spethion_type
-)
+Структурное подразделение (
+идентификатор структурного подразделения, внешний ключ, integer)
 
-divisions (
-divisions_id primary_key
-department varchar(50)
-Unit Group varchar(50)
-Unit Group_type
-department_type
-)
 
-Structura (
-Structura_id primary_key
-Group varchar(50)
-Structura_type
-Structura_title
-)
+Дата найма (
+типы для работы с датами и временем timestamp (50)
 
-date_off_Employee )
-date_off_id primary_key
-date datetime
-)
+Адрес филиала (
+символьный тип varchar/text (50),
 
-branch address (
-address_id primary_key
-edge VARCHAR(50)
-city VARCHAR(50)
-street VARCHAR(50)
-house VARCHAR(50)
-)
-
-project (
-
-project_id primary_key
-
-project_type
-
-)
+Проект (
+символьный тип varchar/text (50)
 
 
 Дополнительные задания (со звёздочкой*)
